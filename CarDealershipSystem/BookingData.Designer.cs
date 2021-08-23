@@ -159,13 +159,13 @@
             this.dgvCustomer.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvCustomer.EnableHeadersVisualStyles = false;
             this.dgvCustomer.GridColor = System.Drawing.SystemColors.Control;
-            this.dgvCustomer.Location = new System.Drawing.Point(18, 158);
+            this.dgvCustomer.Location = new System.Drawing.Point(18, 237);
             this.dgvCustomer.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.dgvCustomer.Name = "dgvCustomer";
             this.dgvCustomer.ReadOnly = true;
             this.dgvCustomer.RowHeadersVisible = false;
             this.dgvCustomer.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dgvCustomer.Size = new System.Drawing.Size(1262, 542);
+            this.dgvCustomer.Size = new System.Drawing.Size(1161, 463);
             this.dgvCustomer.TabIndex = 111;
             // 
             // BookingData
