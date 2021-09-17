@@ -56,6 +56,7 @@
             this.viewAppointmentsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.accountToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.viewPaymentToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.bankDepositToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.reportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allAppointmentReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.allPatientReportToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -69,7 +70,6 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.bankDepositToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2.SuspendLayout();
             this.menuStrip1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -196,6 +196,7 @@
             this.allStaffDataToolStripMenuItem.Name = "allStaffDataToolStripMenuItem";
             this.allStaffDataToolStripMenuItem.Size = new System.Drawing.Size(220, 30);
             this.allStaffDataToolStripMenuItem.Text = "View Records";
+            this.allStaffDataToolStripMenuItem.Click += new System.EventHandler(this.allStaffDataToolStripMenuItem_Click);
             // 
             // CustomerToolStripMenuItem
             // 
@@ -226,6 +227,7 @@
             this.viewPatientRecordsToolStripMenuItem.Name = "viewPatientRecordsToolStripMenuItem";
             this.viewPatientRecordsToolStripMenuItem.Size = new System.Drawing.Size(220, 30);
             this.viewPatientRecordsToolStripMenuItem.Text = "View Records";
+            this.viewPatientRecordsToolStripMenuItem.Click += new System.EventHandler(this.viewPatientRecordsToolStripMenuItem_Click);
             // 
             // paymentToolStripMenuItem
             // 
@@ -248,6 +250,7 @@
             this.viewPaymentToolStripMenuItem1.Name = "viewPaymentToolStripMenuItem1";
             this.viewPaymentToolStripMenuItem1.Size = new System.Drawing.Size(235, 30);
             this.viewPaymentToolStripMenuItem1.Text = "View Payment";
+            this.viewPaymentToolStripMenuItem1.Click += new System.EventHandler(this.viewPaymentToolStripMenuItem1_Click);
             // 
             // appointmentToolStripMenuItem
             // 
@@ -293,6 +296,14 @@
             this.viewPaymentToolStripMenuItem.Name = "viewPaymentToolStripMenuItem";
             this.viewPaymentToolStripMenuItem.Size = new System.Drawing.Size(228, 30);
             this.viewPaymentToolStripMenuItem.Text = "View Payment";
+            this.viewPaymentToolStripMenuItem.Click += new System.EventHandler(this.viewPaymentToolStripMenuItem_Click);
+            // 
+            // bankDepositToolStripMenuItem
+            // 
+            this.bankDepositToolStripMenuItem.Name = "bankDepositToolStripMenuItem";
+            this.bankDepositToolStripMenuItem.Size = new System.Drawing.Size(151, 28);
+            this.bankDepositToolStripMenuItem.Text = "Bank Deposit";
+            this.bankDepositToolStripMenuItem.Click += new System.EventHandler(this.bankDepositToolStripMenuItem_Click);
             // 
             // reportToolStripMenuItem
             // 
@@ -393,12 +404,6 @@
             // 
             this.timer1.Enabled = true;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
-            // 
-            // bankDepositToolStripMenuItem
-            // 
-            this.bankDepositToolStripMenuItem.Name = "bankDepositToolStripMenuItem";
-            this.bankDepositToolStripMenuItem.Size = new System.Drawing.Size(151, 28);
-            this.bankDepositToolStripMenuItem.Text = "Bank Deposit";
             // 
             // Dashboard
             // 

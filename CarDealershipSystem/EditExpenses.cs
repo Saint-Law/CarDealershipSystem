@@ -54,7 +54,7 @@ namespace CarDealershipSystem
 
         public void displayDataGrid()
         {
-            string cmdText = "SELECT * FROM Expense";
+            string cmdText = "SELECT * FROM Expenses";
             SqlCommand cmd = new SqlCommand(cmdText, con);
             SqlDataAdapter dap = new SqlDataAdapter(cmd);
             DataSet ds = new DataSet();
@@ -83,10 +83,10 @@ namespace CarDealershipSystem
             {
                 DataGridViewRow row = this.DataGridView2.Rows[e.RowIndex];
 
-                txtExpenseID.Text = row.Cells["ExpenseID"].Value.ToString();
-                txtExp.Text = row.Cells["Expense"].Value.ToString();
+                txtExpenseID.Text = row.Cells["ExpensesID"].Value.ToString();
+                txtExp.Text = row.Cells["Expenses"].Value.ToString();
                 dtpExpenseDate.Text = row.Cells["Date"].Value.ToString();
-                cmbExpT.Text = row.Cells["ExpenseType"].Value.ToString();
+                cmbExpT.Text = row.Cells["Type"].Value.ToString();
                 txtAmt.Text = row.Cells["Amount"].Value.ToString();
 
             }
@@ -100,7 +100,7 @@ namespace CarDealershipSystem
                 return;
             }
             con.Open();
-            string query = "DELETE FROM Expense WHERE expenseid='" + txtExpenseID.Text + "'";
+            string query = "DELETE FROM Expenses WHERE expenseid='" + txtExpenseID.Text + "'";
             SqlCommand command = new SqlCommand(query, con);
             int affectedrow = command.ExecuteNonQuery();
             if (affectedrow > 0)

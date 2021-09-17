@@ -27,7 +27,7 @@ namespace CarDealershipSystem
                 return;
             }
             con.Open();
-            string query = "INSERT INTO Expense VALUES('" + txtExpenseID.Text + "','" +
+            string query = "INSERT INTO Expenses VALUES('" + txtExpenseID.Text + "','" +
                 txtExp.Text + "','" +
                 dtpExpenseDate.Text + "','" +
                 cmbExpT.SelectedItem + "','" +
@@ -89,14 +89,14 @@ namespace CarDealershipSystem
         private void btnUpdate_Click(object sender, EventArgs e)
         {
             EditExpenses epz = new EditExpenses();
-            epz.Show();
+            epz.ShowDialog();
             this.Hide();
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             EditExpenses epz = new EditExpenses();
-            epz.Show();
+            epz.ShowDialog();
             this.Hide();
         }
 

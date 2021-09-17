@@ -27,7 +27,7 @@ namespace CarDealershipSystem
                 return;
             }
             con.Open();
-            string s = "INSERT INTO carBrand VALUES('" + txtBID.Text + "','" + txtCarB.Text + "','" + txtCarM.Text + "','" + txtComment.Text + "')";
+            string s = "INSERT INTO carBrand VALUES('" + txtBID.Text + "','" + txtCarB.Text + "','" + txtCarM.Text + "','" + txtamt.Text + "','" + txtComment.Text + "')";
             SqlCommand command = new SqlCommand(s, con);
             int affectedrow = command.ExecuteNonQuery();
             if (affectedrow > 0)

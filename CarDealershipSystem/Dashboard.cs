@@ -55,7 +55,8 @@ namespace CarDealershipSystem
 
         private void addUsersToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+            UserReg reg = new UserReg();
+            reg.ShowDialog();
         }
 
         private void expenseTypeToolStripMenuItem_Click(object sender, EventArgs e)
@@ -120,6 +121,36 @@ namespace CarDealershipSystem
         {
             Payment pay = new Payment();
             pay.ShowDialog();
+        }
+
+        private void bankDepositToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            BankDeposit depot = new BankDeposit();
+            depot.ShowDialog();
+        }
+
+        private void allStaffDataToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            StaffData data = new StaffData();
+            data.ShowDialog();
+        }
+
+        private void viewPatientRecordsToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            CustomerData data = new CustomerData();
+            data.ShowDialog();
+        }
+
+        private void viewPaymentToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            PaymentData pdata = new PaymentData();
+            pdata.ShowDialog();
+        }
+
+        private void viewPaymentToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            PaymentData pdata = new PaymentData();
+            pdata.ShowDialog();
         }
     }
 }

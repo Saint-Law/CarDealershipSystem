@@ -51,9 +51,9 @@ namespace CarDealershipSystem
             {
                 MessageBox.Show("No field should be left empty", "WARNING", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
-            }
+            } 
             con.Open();
-            string query = "UPDATE expenseType SET expensetype= '" + txtExp.Text + "' WHERE typeid= '" + txtid.Text + "'";
+            string query = "UPDATE expenseType SET ExpensesType= '" + txtExp.Text + "' WHERE typeid= '" + txtid.Text + "'";
             SqlCommand command = new SqlCommand(query, con);
             int affectedrow = command.ExecuteNonQuery();
             if (affectedrow > 0)

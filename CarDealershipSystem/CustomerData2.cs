@@ -36,15 +36,15 @@ namespace CarDealershipSystem
 
         private void dgvCustomer_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            //Payment pay = new Payment();
+            Payment pay = new Payment();
 
-            //pay.txtPID.Text = dgvCustomer.CurrentRow.Cells[0].Value.ToString();
-            //pay.txtFname.Text = dgvCustomer.CurrentRow.Cells[1].Value.ToString();
-            //pay.txtPhone.Text = dgvCustomer.CurrentRow.Cells[7].Value.ToString();
-            //pay.txtBgroup.Text = dgvCustomer.CurrentRow.Cells[8].Value.ToString();
+            pay.txtPID.Text = dgvCustomer.CurrentRow.Cells[0].Value.ToString();
+            pay.txtFname.Text = dgvCustomer.CurrentRow.Cells[1].Value.ToString();
+            pay.txtPhone.Text = dgvCustomer.CurrentRow.Cells[7].Value.ToString();
+            pay.txtBgroup.Text = dgvCustomer.CurrentRow.Cells[8].Value.ToString();
 
-            //pay.Show();
-            //this.Hide();
+            pay.Show();
+            this.Hide();
         }
     }
 }
